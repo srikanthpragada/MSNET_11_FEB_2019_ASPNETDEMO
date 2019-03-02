@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+
+<script runat="server">
+
+</script>
+
+<html>
+<head runat="server">
+    <title>Products</title>
+    <style>
+        body {
+            font-family :Verdana; 
+            font-size:12pt; 
+        }
+        .banner {
+            font-size: 24pt;
+            font-family: Arail;
+            font-weight: bold;
+            background-color: blue;
+            color: white;
+        }
+        .menu {
+            font-weight: bold;
+            background-color: #eeeeee;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="banner">
+        Products
+    </div>
+    <div class="menu">
+        <a href="list_products.aspx">List</a>
+        <a href="add_product.aspx">Add</a>
+        <a href="search_products.aspx">Search</a>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
