@@ -9,8 +9,7 @@
         // Get id of the product from QueryString 
         string prodid = Request.QueryString["id"];
         // Connect to database
-        SqlConnection con = new SqlConnection
-            (@"Data Source=(localdb)\mssqllocaldb;Initial Catalog=msdb;Integrated Security=True");
+        SqlConnection con = new SqlConnection(Database.ConnectionString);
         try
         {
             con.Open();

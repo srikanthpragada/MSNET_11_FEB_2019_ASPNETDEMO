@@ -7,8 +7,7 @@
     protected void btnAdd_Click(object sender, EventArgs e)
     {
         // Connect to database
-        SqlConnection con = new SqlConnection
-            (@"Data Source=(localdb)\mssqllocaldb;Initial Catalog=msdb;Integrated Security=True");
+        SqlConnection con = new SqlConnection(Database.ConnectionString);
         try
         {
             con.Open();

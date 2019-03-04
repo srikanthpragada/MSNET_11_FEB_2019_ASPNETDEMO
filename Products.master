@@ -33,9 +33,13 @@
         Products
     </div>
     <div class="menu">
-        <a href="list_products.aspx">List</a>
-        <a href="add_product.aspx">Add</a>
-        <a href="search_products.aspx">Search</a>
+        [<a href="list_products.aspx">List</a>]
+        &nbsp;
+        [<a href="add_product.aspx">Add</a>]
+        &nbsp;
+        [<a href="update_product.aspx">Update</a>]
+        &nbsp;
+        [<a href="search_products.aspx">Search</a>]
     </div>
     <div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
